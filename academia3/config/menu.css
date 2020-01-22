@@ -1,0 +1,138 @@
+/* menu pc */
+
+#menu-pc {
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    right: 0;
+    list-style: none;
+    display: inline-flex;
+}
+ul#menu-pc li a{
+    text-decoration: none;
+    text-align: center;
+    font-size: 50%;
+}
+ul#menu-pc:hover li.aniamtion-link a{
+    color: orange;
+}
+li.animation-link:hover {
+    transition: .2s ease-in;
+    border-bottom: 4px rgba(224, 121, 2, 0.8) solid;
+    margin-top: -10px;
+    width: 100%;
+}
+/* animação toggle */
+
+#menu {
+    width: 35px;
+    height: 30px;
+    margin: 30px 0 20px 20px;
+    cursor: pointer;
+}
+
+.bar {
+    height: 5px;
+    width: 100%;
+    background-color: #f8a100;
+    display: block;
+    border-radius: 5px;
+    transition: 0.3s ease;
+}
+
+#bar1 {
+    transform: translateY(-4px);
+}
+
+#bar3 {
+    transform: translateY(4px);
+}
+
+.change .bar {
+    background-color: rgb(225, 250, 0);
+}
+
+.change #bar1 {
+    transform: translateY(4px) rotateZ(-45deg);
+}
+
+.change #bar3 {
+    transform: translateY(-6px) rotate(45deg);
+}
+
+.change #bar2 {
+    transform: translateY(-1px) rotate(-315deg);
+}
+
+/* configuração menu lateral */
+
+#check {
+    display: none;
+}
+
+.barra {
+    top: 100%;
+    background-color: rgb(17, 17, 17);
+    width: 300px;
+    height: 100vh;
+    position: absolute;
+    transition: all .2s linear;
+    left: -300px;
+}
+
+nav {
+    margin: 0;
+    padding: 0;
+    width: 300px;
+    height: 100%;
+}
+
+/* configurando sidebar */
+
+ul#side-menu {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+ul#side-menu li a {
+    width: 0;
+    text-align: justify;
+    margin: 0;
+    display: block;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    padding: 10%;
+}
+
+ul#side-menu li a:hover {
+    transition: .2s ease-in-out;
+    border-bottom: 2px rgba(224, 121, 2, 0.8) solid;
+    height: 100%;
+    width: 250px;
+    color: orange;
+}
+
+#check:checked~.barra {
+    transform: translateX(300px);
+    opacity: 1;
+    margin-top: 0;
+    transition-delay: 0.1s;
+}
+#check:checked~.barra nav a .link {
+    opacity: 1;
+    margin-top: 0;
+    transition-delay: 0.1s;
+}
+/* alterar dimensões site small and large */
+@media screen and (max-width: 768px) {
+    #menu-pc {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    #menu-bar {
+        display: none;
+    }
+}
