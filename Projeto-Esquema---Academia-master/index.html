@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Academia</title>
+    <meta name="viewport" content="width=device-width">
+    <link rel="icon" type="image/jpg" href="config/img/icon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="config/style.css">
+    <link rel="stylesheet" href="config/menu.css">
+    <script src="config/script.js"></script>
+
+</head>
+
+<body>
+    <header>
+        <img id="logo-topo" src="config/img/logo.png">
+        <ul id="menu-pc">
+            <li class="animation-link"><a href="#"> Home </a></li>
+            <li class="animation-link"><a href="#"> Mapas </a></li>
+            <li class="animation-link"><a href="#"> Horarios </a></li>
+            <li class="animation-link"><a href="#"> Personais </a></li>
+            <li class="animation-link"><a href="#"> Sobre</a></li>
+        </ul>
+        <input type="checkbox" id="check">
+        <label for="check">
+            <div id="menu-bar">
+                <div id="toggle" onclick="menuAnimate()">
+                    <div id="bar1" class="bar"></div>
+                    <div id="bar2" class="bar"></div>
+                    <div id="bar3" class="bar"></div>
+                </div>
+            </div>
+        </label>
+        <div class="side-bar">
+            <nav>
+                <ul id="side-menu">
+                    <br>
+                    <li> <a class="link txt" href="#"> Home </a></li>
+                    <li> <a class="link txt" href="#"> Mapas </a></li>
+                    <li> <a class="link txt" href="#"> Horarios</a></li>
+                    <li> <a class="link txt" href="#"> Sobre</a></li>
+                    <li> <a class="link txt" href="#"> Personais </a></li>
+                    <br>
+                    <hr>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section id="parallax">
+        <img id="logo_meio" src="config/img/logo.png">
+        <h1 class="texto"> Seja bem vindo </h1>
+    </section>
+    <!-- cards de sobre -->
+    <div id="sobre-funcionarios">
+    </div>
+    <div id="info-2">
+    </div>
+    <div id="lugar">
+        <h1>Onde estamos?</h1>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d33024.52020562509!2d-47.08879328173581!3d-22.814026982399565!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94c8c6b005d24db5%3A0xc6db750ecf04d796!2sUNICAMP%20Universidade%20Estadual%20de%20Campinas!5e0!3m2!1spt-BR!2sbr!4v1579722651490!5m2!1spt-BR!2sbr"
+            frameborder="0" style = "border:0;" allowfullscreen="" align="left"></iframe>
+        <div id="placeholder">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut  </p>
+        </div>
+    </div>
+                <!-- rodape  -->
+    <footer>
+        <section class="info-footer">
+            <div class="social" id="facebook">
+                <img class="icone" src="config/img/facebook.png">
+            </div>
+            <div class="social" id="instagram">
+                <img class="icone" src="config/img/instagram.png">
+            </div>
+            <div class="social" id="youtube">
+                <img class="icone" src="config/img/youtube.png">
+            </div>
+            <div class="social" id="spotify">
+                <img class="icone" src="config/img/spotify.png">
+            </div>
+        </section>
+        </br>
+        <h1 id="Copyright" > <a href="#">© 2020 Copyright: ----------- </a></h1>
+    </footer>
+
+</body>
+
+</html>
